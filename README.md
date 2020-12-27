@@ -13,6 +13,7 @@ Sparkify app data resides in two public Amazon S3 buckets:
     - a subset of real data from the Million Song Dataset 
     - contains the metadata on the song on the app and the artist of the song 
     
+    
 
 2- Log Dataset:(files are distributed  into several folders several folders without a common prefix, so we will use a descriptor file called "Log data json path" to extract them )
     - Log data: 's3://udacity-dend/log_data'
@@ -24,11 +25,14 @@ Sparkify app data resides in two public Amazon S3 buckets:
 ## Running Requirements    
 
 1- An available and running  AWS Redshift Cluster with 4" Node and "dc2.large" NodeType
+
 2- An IAM role attached with an AmazonS3ReadOnlyAccess policy
 
 Once the above is set, open a terminal and run the following python files: 
 
+
 3- Run "create_tables.py"
+
 4- Run "python etl.py"
 
 
